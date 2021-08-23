@@ -42,7 +42,7 @@ about:
   home: https://github.com/ALBA-Synchrotron/IcepapOCS
   summary: Python application to monitor and tune IcePAP based systems
   license: GPL-3.0-or-later
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
