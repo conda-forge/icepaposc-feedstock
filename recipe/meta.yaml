@@ -1,5 +1,5 @@
 {% set name = "icepaposc" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepaposc-{{ version }}.tar.gz
-  sha256: ffa5704aadb2d2ba61e468f907725e673a09456c52bfdb1cb34c99174da06720
+  sha256: 341849b4b83093574520d189529e79a0aaa6c721303ee5445d719fcff690b854
 
 build:
   number: 0
@@ -42,7 +42,7 @@ about:
   home: https://github.com/ALBA-Synchrotron/IcepapOCS
   summary: Python application to monitor and tune IcePAP based systems
   license: GPL-3.0-or-later
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
