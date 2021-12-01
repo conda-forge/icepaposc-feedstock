@@ -9,9 +9,11 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepaposc-{{ version }}.tar.gz
   sha256: 341849b4b83093574520d189529e79a0aaa6c721303ee5445d719fcff690b854
+  patches:
+    - pyqt5-compatibility.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - icepaposc = icepaposc.__main__:main
