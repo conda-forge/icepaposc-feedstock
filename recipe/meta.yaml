@@ -39,7 +39,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/ALBA-Synchrotron/IcepapOCS
+  home: https://github.com/ALBA-Synchrotron/IcepapOSC
   summary: Python application to monitor and tune IcePAP based systems
   license: GPL-3.0-or-later
   license_file: LICENSE
