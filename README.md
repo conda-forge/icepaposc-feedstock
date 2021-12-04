@@ -1,7 +1,7 @@
 About icepaposc
 ===============
 
-Home: https://github.com/ALBA-Synchrotron/IcepapOCS
+Home: https://github.com/ALBA-Synchrotron/IcepapOSC
 
 Package license: GPL-3.0-or-later
 
