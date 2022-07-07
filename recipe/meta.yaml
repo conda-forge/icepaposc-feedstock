@@ -1,5 +1,5 @@
 {% set name = "icepaposc" %}
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepaposc-{{ version }}.tar.gz
-  sha256: 97e18434ed19b44258f2cad882050264437fdd20a053f63a9c361d6b077cc627
+  sha256: 5c5cba517cae3ce8bb9cba061c0ca5b9f87ef9b16e68a391ee7c9797e3467290
 
 build:
   number: 0
