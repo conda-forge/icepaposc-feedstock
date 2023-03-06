@@ -1,11 +1,11 @@
-About icepaposc
-===============
+About icepaposc-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/icepaposc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ALBA-Synchrotron/IcepapOSC
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/icepaposc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python application to monitor and tune IcePAP based systems
 
@@ -145,4 +145,5 @@ Feedstock Maintainers
 
 * [@beenje](https://github.com/beenje/)
 * [@perhedmax](https://github.com/perhedmax/)
+* [@rhomspuron](https://github.com/rhomspuron/)
 
