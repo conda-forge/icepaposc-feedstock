@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icepaposc-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/icepaposc-{{ version }}.tar.gz
   sha256: a3c1723c92a0354ec9c8a08985ca8bd23e7745298523bbd782de6d909483d16d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - icepaposc = icepaposc.__main__:main
@@ -20,13 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
+    - setuptools
   run:
     - icepap
     - numpy
     - pyqt
     - pyqtgraph
-    - python >=3.5
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -37,6 +38,7 @@ test:
     - icepaposc --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ALBA-Synchrotron/IcepapOSC
