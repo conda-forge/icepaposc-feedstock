@@ -37,14 +37,13 @@ tests:
       imports:
         - icepaposc
         - icepaposc.custom_widgets
-      python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
+      python_version: ["${{ python_min }}.*", "3.*"]
+      pip_check: true
+  - script:
       - icepaposc --help
+    requirements:
+      run:
+        - python ${{ python_min }}.*
 
 about:
   summary: Python application to monitor and tune IcePAP based systems
