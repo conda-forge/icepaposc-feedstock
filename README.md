@@ -3,7 +3,7 @@ About icepaposc-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/icepaposc-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/ALBA-Synchrotron/IcepapOSC
+Home: https://gitlab.com/icepap-organization/IcepapOSC
 
 Package license: GPL-3.0-or-later
 
