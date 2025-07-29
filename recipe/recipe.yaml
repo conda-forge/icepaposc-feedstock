@@ -1,0 +1,59 @@
+schema_version: 1
+
+context:
+  name: icepaposc
+  version: 0.11.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/icepaposc-${{ version }}.tar.gz
+  sha256: 082198e19b721e79cc68f2466a3b8cd4e3d8c3df38bfb8055772cbd40260d259
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - icepaposc = icepaposc.__main__:main
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - icepap
+    - numpy
+    - pyqt
+    - pyqtgraph
+    - python >=${{ python_min }}
+
+tests:
+  - python:
+      imports:
+        - icepaposc
+        - icepaposc.custom_widgets
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+      - icepaposc --help
+
+about:
+  summary: Python application to monitor and tune IcePAP based systems
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  homepage: https://github.com/ALBA-Synchrotron/IcepapOSC
+
+extra:
+  recipe-maintainers:
+    - rhomspuron
+    - beenje
+    - perhedmax
