@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: icepaposc
-  version: 0.11.0
+  version: "0.11.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/icepaposc-${{ version }}.tar.gz
-  sha256: 082198e19b721e79cc68f2466a3b8cd4e3d8c3df38bfb8055772cbd40260d259
+  sha256: b6e996b748883c3c33bad8bac48e666cc89d035bbb5de88251827525fe6e25d7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
