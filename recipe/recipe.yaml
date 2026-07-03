@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: icepaposc
-  version: "0.11.1"
+  version: "1.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/icepaposc-${{ version }}.tar.gz
-  sha256: b6e996b748883c3c33bad8bac48e666cc89d035bbb5de88251827525fe6e25d7
+  sha256: 0ade2e8f4984237fadad0daedcf6c2d1bcf956738ff1a2449eab31e64b7c0106
 
 build:
   number: 0
@@ -25,10 +25,11 @@ requirements:
     - pip
     - python ${{ python_min }}.*
     - setuptools
+    - setuptools-scm
   run:
-    - icepap
+    - icepap >=3.6.1
     - numpy
-    - pyqt
+    - pyqt6
     - pyqtgraph
     - python >=${{ python_min }}
 
