@@ -25,10 +25,11 @@ requirements:
     - pip
     - python ${{ python_min }}.*
     - setuptools
+    - setuptools-scm
   run:
-    - icepap
+    - icepap >=3.6.1
     - numpy
-    - pyqt
+    - pyqt6
     - pyqtgraph
     - python >=${{ python_min }}
 
