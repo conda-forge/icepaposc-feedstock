@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: icepaposc
-  version: "1.0.0"
+  version: "1.0.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/icepaposc-${{ version }}.tar.gz
-  sha256: 0ade2e8f4984237fadad0daedcf6c2d1bcf956738ff1a2449eab31e64b7c0106
+  sha256: 61a8b08056f9b769216ecf0982e427701db8ec12e1c82bccf5b51ab399811330
 
 build:
   number: 0
